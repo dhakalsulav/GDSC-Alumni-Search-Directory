@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ULM Alumni Directory</title>
+    
+        <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+        <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+        <!-- Header section -->
+    <header>
+
+        <!-- Top header with logo and secondary navigation -->
+        <div class="top-header">
+            <div class="container">
+
+                <!-- ULM logo -->
+                <a href="https://www.ulm.edu/" class="logo">
+                    <img src="https://www.ulm.edu/_resources/images/ulm-academic-logo-circle.png" alt="ULM Logo" class="logo-image">
+                </a>
+
+                <!-- Top navigation links -->
+                <nav class="top-nav">
+                    <ul>
+                        <li><a href="https://webapps.ulm.edu/myulm/">MyULM</a></li>
+                        <li><a href="https://webservices.ulm.edu/mobileapp/mobile_directory/mobile_directory.php?aaaaa=bbbbb&no_title_bar=false&from_os=non-mobile">Directory</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Bottom header with main navigation -->
+        <div class="bottom-header">
+            <div class="container">
+                <h1>Alumni Directory</h1>
+
+                <!-- Main navigation links -->
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="https://www.ulm.edu/">Home</a></li>
+                        <li><a href="https://www.ulm.edu/international/campus-community.html">About</a></li>
+                        <li><a href="https://calendar.ulm.edu/">Events</a></li>
+                        <li><a href="https://webservices.ulm.edu/webforms/form/ask-ace">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main content section -->
+    <main class="container">
+
+        <!-- Search input field for filtering alumni by name, company, or position -->
+        <input type="text" id="searchInput" placeholder="Search alumni by name, company, or position..." aria-label="Search alumni">
+
+        <!-- Alumni table structure -->
+        <table id="alumniTable">
+            <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Company</th>
+                    <th scope="col">Position</th>
+                    <th scope="col">Location</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <!-- Alumni data rows will be dynamically inserted from JavaScript -->
+            </tbody>
+        </table>
+
+        <!-- Pagination section -->
+        <div id="pagination" class="pagination">
+        <!-- Pagination buttons will be dynamically inserted from JavaScript -->        </div>
+    </main>
+
+    <!-- Alumni detail modal for displaying more information about a selected alumnus -->
+    <div id="alumniModal" class="modal">
+        <div class="modal-content">
+
+            <!-- Close button for modal -->
+            <span class="close">&times;</span>
+            <h2 id="modalName"></h2>
+            <div class="modal-info">
+                <p id="modalCompany"></p>
+                <p id="modalPosition"></p>
+                <p id="modalEmail"><a href="#" id="modalEmailLink"></a></p>
+                <p id="modalAddress"><a href="#" id="modalAddressLink"></a></p>
+                <p id="modalPhone"></p>
+                <p id="modalWebsite"><a href="#" id="modalWebsiteLink" target="_blank" rel="noopener noreferrer"></a></p>
+            </div>
+            <!-- Description and discount details for the alumnus -->
+            <p id="modalDescription"></p>
+            <p id="modalDiscount"></p>
+        </div>
+    </div>
+
+    <!-- Confirmation modal for various actions like deletion -->
+    <div id="confirmationModal" class="modal">
+        <div class="modal-content confirmation-content">
+            <h3 id="confirmationTitle"></h3>
+            <p id="confirmationMessage"></p>
+
+            <!-- Confirmation buttons for Yes and No -->
+            <div class="confirmation-buttons">
+                <button id="confirmYes" class="btn btn-primary">Yes</button>
+                <button id="confirmNo" class="btn btn-secondary">No</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 University of Louisiana Monroe. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

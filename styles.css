@@ -1,0 +1,400 @@
+/* Define ULM's branding colors for consistency and easy reuse across the stylesheet */
+:root {
+    --ulm-maroon: #800029;
+    --ulm-gold: #FDB913;
+    --ulm-light-gray: #F1F1F1;
+}
+
+/* Set a clean and modern font with a light background color */
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--ulm-light-gray);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Center content with appropriate padding */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Header styles */
+header {
+/* Use ULM maroon color for the header to establish brand identity */
+    background-color: var(--ulm-maroon);
+    color: white;
+}
+
+/* Separate top header visually with subtle border */
+.top-header {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(214, 189, 189, 0.2);
+}
+
+/* Align logo and navigation items in a single row */
+.top-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Ensure logo scales appropriately */
+.logo-image {
+    height: 50px;
+    width: auto;
+}
+
+/* Horizontal navigation layout with no default list styles */
+.top-nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Add spacing between navigation items */
+.top-nav ul li {
+    margin-left: 1rem;
+}
+
+/* Styling links with consistent color and removing underline */
+.top-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+/* Bottom header with background design */
+.bottom-header {
+    padding: 1rem 0;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABTUAAACQCAYAAADZYI9vAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAACI5JREFUeNrs3cGJKlEQhtHCCMxAwYRMxQzMQDMwMkEz6BC8Db1oauOqaAvPhXkDZ3ibf/lBUxGrdzoc9+PnGulxzjnnnHPOOeecc8754o/595a+W/9h/LqNn3v+D5xzzjnnnHPOOeecc7745fl+TVv7zxRWzjnnnHPOOeecc845/+aG4JxzzjnnnHPOOeect/L5n7MhOOecc84555xzzjnnXTzyMxDnnHPOOeecc84559yn6JxzzjnnnHPOOeeccy5ocs4555xzzjnnnHPOBU0Dcc4555xzzjnnnHPOBU3OOeecc84555xzzjl3/ZxzzjnnnHPOOeecc+76uYE455xzzjnnnHPOOee93BCcc84555xzzjnnnHNBk3POOeecc84555xzzgVNzjnnnHPOOeecc865oGkgzjnnnHPOOeecc8656+ecc84555xzzjnnnHPu+jnnnHPOOeecc84555wbgnPOOeecc84555xzLmhyzjnnnHPOOeecc865oMk555xzzjnnnHPOORc0DcE555xzzjnnnHPOOXf9nHPOOeecc84555xzzks88jMQ55xzzjnnnHPOOefcp+icc84555xzzjnnnHMuaHLOOeecc84555xzzgVNA3HOOeecc84555xzzgVNzjnnnHPOOeecc845d/2cc84555xzzjnnnHPu+rmBOOecc84555xzzjnnvdwQnHPOOeecc84555xzQZNzzjnnnHPOOeecc84FTc4555xzzjnnnHPOuaBpIM4555xzzjnnnHPOuevnnHPOOeecc84555xz7vo555xzzjnnnHPOOeecG4JzzjnnnHPOOeeccy5ocs4555xzzjnnnHPOuaDJOeecc84555xzzjkXNA3BOeecc84555xzzjl3/ZxzzjnnnHPOOeecc85LPPIzEOecc84555xzzjnn3KfonHPOOeecc84555xzLmhyzjnnnHPOOeecc84FTQNxzjnnnHPOOeecc84FTc4555xzzjnnnHPOOXf9nHPOOeecc84555xz7vq5gTjnnHPOOeecc845573cEJxzzjnnnHPOOeecc0GTc84555xzzjnnnHPOBU3OOeecc84555xzzrmgaSDOOeecc84555xzzrnr55xzzjnnnHPOOeecc+76Oeecc84555xzzjnnnBuCc84555xzzjnnnHMuaHLOOeecc84555xzzrmgyTnnnHPOOeecc845FzQNwTnnnHPOOeecc845d/2cc84555xzzjnnnHPOSzzyMxDnnHPOOeecc84559yn6JxzzjnnnHPOOeeccy5ocs4555xzzjnnnHPOBU0Dcc4555xzzjnnnHPOBU3OOeecc84555xzzjl3/ZxzzjnnnHPOOeecc+76uYE455xzzjnnnHPOOee93BCcc84555xzzjnnnHNBk3POOeecc84555xzzgVNzjnnnHPOOeecc865oGkgzjnnnHPOOeecc8656+ecc84555xzzjnnnHPu+jnnnHPOOeecc84555wbgnPOOeecc84555xzLmhyzjnnnHPOOeecc865oMk555xzzjnnnHPOORc0DcE555xzzjnnnHPOOXf9nHPOOeecc84555xzzks88jMQ55xzzjnnnHPOOefcp+icc84555xzzjnnnHMuaHLOOeecc84555xzzgVNA3HOOeecc84555xzzgVNzjnnnHPOOeecc845d/2cc84555xzzjnnnHPu+rmBOOecc84555xzzjnnvdwQnHPOOeecc84555xzQZNzzjnnnHPOOeecc84FTc4555xzzjnnnHPOuaBpIM4555xzzjnnnHPOuevnnHPOOeecc84555xz7vo555xzzjnnnHPOOeecG4JzzjnnnHPOOeeccy5ocs4555xzzjnnnHPOuaDJOeecc84555xzzjkXNA3BOeecc84555xzzjl3/ZxzzjnnnHPOOeecc85LPPIzEOecc84555xzzjnn3KfonHPOOeecc84555xzLmhyzjnnnHPOOeecc84FTQNxzjnnnHPOOeecc84FTc4555xzzjnnnHPOOXf9nHPOOeecc84555xz7vq5gTjnnHPOOeecc845573cEJxzzjnnnHPOOeecc0GTc84555xzzjnnnHPOBU3OOeecc84555xzzrmgaSDOOeecc84555xzzrnr55xzzjnnnHPOOeecc+76Oeecc84555xzzjnnnBuCc84555xzzjnnnHMuaHLOOeecc84555xzzrmgyTnnnHPOOeecc845FzQNwTnnnHPOOeecc845d/2cc84555xzzjnnnHPOSzzyMxDnnHPOOeecc84559yn6JxzzjnnnHPOOeeccy5ocs4555xzzjnnnHPOBU0Dcc4555xzzjnnnHPOBU3OOeecc84555xzzjl3/ZxzzjnnnHPOOeecc+76uYE455xzzjnnnHPOOee93BCcc84555xzzjnnnHNBk3POOeecc84555xzzgVNzjnnnHPOOeecc865oGkgzjnnnHPOOeecc8656+ecc84555xzzjnnnHPu+jnnnHPOOeecc84555wbgnPOOeecc84555xzLmhyzjnnnHPOOeecc865oMk555xzzjnnnHPOORc0DcE555xzzjnnnHPOOXf9nHPOOeecc84555xzzks88jMQ55xzzjnnnHPOOefcp+icc84555xzzjnnnHMuaHLOOeecc84555xzzgVNA3HOOeecc84555xzzgVNzjnnnHPOOeecc845d/2cc84555xzzjnnnHPu+rmBOOecc84555xzzjnnvdwQnHPOOeecc84555xzQZNzzjnnnHPOOeecc84FTc4555xzzjnnnHPOuaBpIM4555xzzjnnnHPOuevnnHPOOeecc84555xz7vo555xzzjnnnHPOOef8n/0jwACBNQ8BaJHyCAAAAABJRU5ErkJggg==");
+}
+
+/* Aligning bottom header elements neatly */
+.bottom-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Use a serif font for the main title to create a professional contrast with the body font */
+h1 {
+    font-family: 'Merriweather', Georgia, serif;
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Similar to top navigation, horizontally aligned list */
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Create spacing between main navigation items */
+.main-nav ul li {
+    margin-left: 1.5rem;
+}
+
+/* Bold links for better readability */
+.main-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Main content styles */
+
+/* Add padding to the main content area */
+main {
+    padding:  2rem 0;
+}
+
+/* Full-width search bar with padding and border radius for user-friendly design */
+#searchInput {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/* Table styles */
+
+/* Structured table with clean separation and box shadow for elevation */
+#alumniTable {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure padding and borders for better readability */
+#alumniTable th,
+#alumniTable td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Header row styling with maroon background and white text */
+#alumniTable th {
+    background-color: #800029;
+    color: white;
+    font-weight: 600;
+}
+
+/* Hover effect for table rows to enhance user interaction */
+#alumniTable tr:hover {
+    background-color: #dfdbdb;
+}
+
+/* Highlighting alumni names with maroon and bold text */
+#alumniTable .alumni-name {
+    color: var(--ulm-maroon);
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* Underline effect on hover for better interaction feedback */
+#alumniTable .alumni-name:hover {
+    text-decoration: underline;
+}
+
+/* Pagination styles */
+
+/* Center pagination controls with spacing */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+ /* Button styling for pagination with smooth transition effects */
+.pagination button {
+    background-color: var(--ulm-maroon);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+    background-color: var(--ulm-gold);
+    color: var(--ulm-maroon);
+}
+
+.pagination button.active {
+    background-color: var(--ulm-gold);
+    color: var(--ulm-maroon);
+}
+
+/* Modal styles */
+
+/* Modal design with dark background overlay and animations */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Center modal content with smooth slide-in animation */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 2rem;
+    border: 1px solid #888;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    animation: slideIn 0.3s;
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+}
+
+/* Modal content styles */
+.modal-content h2 {
+    margin-top: 0;
+    color: #862633;
+    border-bottom: 2px solid #862633;
+    padding-bottom: 0.5rem;
+}
+
+.modal-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.modal-info p {
+    margin: 0;
+}
+
+.modal-info a {
+    color: #862633;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.modal-info a:hover {
+    color: #FDB913;
+    text-decoration: underline;
+}
+
+#modalDescription {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #ddd;
+}
+
+#modalDiscount {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+/* Confirmation modal styles */
+.confirmation-content {
+    text-align: center;
+    max-width: 400px;
+}
+
+.confirmation-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-primary {
+    background-color: #862633;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #6e1f29;
+}
+
+.btn-secondary {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.btn-secondary:hover {
+    background-color: #e0e0e0;
+}
+
+/* Footer styles */
+
+/* Footer aligned with maroon background and white text */
+footer {
+    background-color: #800029;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Responsive design */
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .top-header .container,
+    .bottom-header .container {
+
+        /* Stack header content vertically for small devices */
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .top-nav ul,
+
+    /* Adjust navigation layout for mobile */
+    .main-nav ul {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    .top-nav ul li,
+    .main-nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    #alumniTable th,
+    #alumniTable td {
+
+        /* Reduce padding on table for smaller screens */
+        padding: 0.5rem;
+    }
+
+    .modal-content {
+        width: 95%;
+        margin: 5% auto;
+    }
+}
+
+/* Accessibility improvements */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+:focus {
+    outline: 2px solid #800029;
+    outline-offset: 2px;
+}
